@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Shop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="/css/b.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+</head>
+
+<body>
+  <!---HEADER SECTION STARTS-->
+  <header class="header">
+
+    <a href="#" class="logo">
+      <img src="images/logo.png" alt="coffee-logo">
+    </a>
+
+    <nav class="navbar">
+      <a href="#home-section">home</a>
+      <a href="#about-section">about</a>
+      <a href="#menu-section">menu</a>
+      <a href="#product-section">products</a>
+      <a href="#review-section">review</a>
+      <a href="#contact-section">contact</a>
+      <a href="#blogs-section">blogs</a>
+    </nav>
+
+    <div class="icons">
+      <div class="fas fa-search" id="search-icon"></div>
+      <div class="fas fa-shopping-cart" id="shopping-cart-icon"></div>
+      <div class="fas fa-bars" id="menu-icon"></div>
+    </div>
+
+    <div class="search-form">
+      <input type="search" id="search-box" placeholder="Search">
+      <label for="search-box" class="fas fa-search"></label>
+    </div>
+
+    <div class="cart-container">
+      <div class="items">
+        <span class="fas fa-times"></span>
+        <img src="images/cart-item-1.png" alt="">
+      <div class="content">
+        <h3>cart item 01</h3>
+        <div class="price">$10.02</div>
+      </div>
+      </div>
+
+      <div class="items">
+        <span class="fas fa-times"></span>
+        <img src="images/cart-item-2.png" alt="">
+      <div class="content">
+        <h3>cart item 01</h3>
+        <div class="price">$10.02</div>
+      </div>
+      </div>
+
+      <div class="items">
+        <span class="fas fa-times"></span>
+        <img src="images/cart-item-3.png" alt="">
+      <div class="content">
+        <h3>cart item 01</h3>
+        <div class="price">$10.02</div>
+      </div>
+      </div>
+
+      <div class="items">
+        <span class="fas fa-times"></span>
+        <img src="images/cart-item-4.png" alt="">
+      <div class="content">
+        <h3>cart item 01</h3>
+        <div class="price">$10.02</div>
+      </div>
+        </div>
+        <a href="#">
+          <button class="btn">Checkout Now</button>
+        </a>
+    </div>
+  </header>
+  <!-----header section ends-->
+
+
+  <!---HOME SECTION STARTS-->
+  <section class="home-section" id="home-section">
+    <div class="content">
+      <!-- <h3>Sunshine, a good cup of coffee, and a comfy patio…</h3> -->
+      <h3> 
+        <div class="for-space">
+          <span class="heading-h3">f</span><span>ro</span><span class="heading-h3">m</span>
+        </div> 
+        <div class="for-space">
+          <span class="heading-h3">o</span><span>u</span><span class="heading-h3">r</span> 
+        </div>
+        <div class="for-space">
+          <span class="heading-h3">pl</span><span>a</span><span class="heading-h3">nt</span><span>a</span><span class="heading-h3">ti</span><span>o</span><span class="heading-h3">n</span>
+        </div>
+        <div class="for-space">
+          <span class="heading-h3">t</span><span>o</span>
+        </div>
+        <div class="for-space">
+          <span class="heading-h3">y</span><span>ou</span><span class="heading-h3">r</span>
+        </div>
+        <div class="for-space">
+          <span class="heading-h3">c</span><span>u</span><span class="heading-h3">p!</span>
+        </div>
+      </h3>
+      <p>
+        We’re the Coffee Bean and we’ve been roasting and serving organic 
+        coffee here in Toronto since 1981. We believe in only sourcing ethically
+         farmed beans, roasting them in house, and serving fresh coffee to our customers 
+         at a fair price.
+      </p>
+      <a href="#" class="btn">get yours now</a>
+    </div>
+  </section>
+  <!-----home section ends here-->
+
+  
+  <!-- LOGIN AND REGISTRATION SECTION STARTS -->
+
+  <div class="container">
+    <div class="form">
+      <div class="buttons">
+        <button class="Login">SignIn</button>
+        <button class="SignUp">SignUp</button>
+        <button id="close">&times;</button>
+      </div>
+      <!-- for sign up form -->
+      <form action="#" class="signup-form" >
+        <div class="formGroup">
+          <input type="text" id="userName" placeholder="Enter your name" autocomplete="off">
+          <!-- <i class="uil uil-user"></i> -->
+        </div>
+        <div class="formGroup">
+          <input type="email" name="email" placeholder="Enter your email" required autocomplete="off">
+          <!-- <i class="uil uil-envelope icon"></i> -->
+        </div>
+        <div class="formGroup">
+          <input type="phone" name="phone" placeholder="Phone No" required autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="password" name="email" placeholder="Password" required autocomplete="off">
+          <!-- <i class="uil uil-lock icon"></i> -->
+        </div>
+        <div class="formGroup">
+          <input type="password" id="confirm Password" placeholder="Confirm Password" required autocomplete="off">
+          <!-- <i class="uil uil-lock icon"></i>
+          <i class="uil uil-eye-slash showHidePw"></i> -->
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="checkbox" id="checkbox">
+          <label for="checkbox" class="text">I agree with the term and conditions</label>
+        </div>
+        <div class="formGroup">
+          <button type="button" class="register-button">SIGNUP</button>
+        </div>
+        
+      </form>
+
+              <!-- for login page  -->
+    <form action="#" class="login-form" >
+      <div class="formGroup">
+        <input type="email" name="email" placeholder="Enter your email" required autocomplete="off">
+        <!-- <i class="uil uil-envelope icon"></i> -->
+      </div>
+      <div class="formGroup">
+        <input type="password" id="password" placeholder="Enter your Password" required autocomplete="off">
+        <!-- <i class="uil uil-lock icon"></i>
+        <i class="uil uil-eye-slash showHidePw"></i> -->
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <label for="checkbox" class="text">Keep me signed in on this device</label>
+      </div>
+      <div class="formGroup">
+        <button type="button" class="login-button">LOGIN</button>
+      </div>
+    </form>
+      
+    </div>
+  </div>
+
+  <!-- login section ends here! -->
+
+
+
+
+
+  <!----ABOUT SECTION STARTS-->
+  <section class="about-section" id="about-section">
+    <h1 class="heading"><span>about</span> us </h1>
+    <div class="row">
+    <div class="image-sec">
+      <img src="images/about-image.jpg" alt="about-image">
+    </div>
+
+    <div class="content-sec">
+      <h3>What makes our coffee special?</h3>
+      <p>You’ll savour something like no other with it’s rich 
+        flavour notes and strong aroma, no matter what your order is. 
+        This is because the industry pays particular attention to the 
+        quality of the coffee beans, the use of proper tools and machines, 
+        and the right preparation techniques.
+      </p>
+      <p> We’re the Coffee Bean and we’ve been roasting and serving organic 
+        coffee here in Toronto since 1981. We believe in only sourcing ethically
+         farmed beans, roasting them in house, and serving fresh coffee to our customers 
+         at a fair price
+      </p>
+      <a href="#" class="l-btn">learn more</a>
+    </div>
+  </div>
+  </section>
+  <!-- about section ends here -->
+
+
+  <!-- MENU SECTION STARTS -->
+  <section class="menu-section" id="menu-section">
+    <h1 class="heading">
+      our <span>menu</span>
+    </h1>
+
+    <div class="containers">
+      
+      <div class="small-box">
+        <img src="/Images/menu-1.png" alt="menu1.png">
+        <h3>tasty and healthy</h3>
+        <div class="price">Rs.250 <span>350</span></div>
+        <a href="#" class="btn">add to cart</a>
+      </div>
+
+      <div class="small-box">
+        <img src="/Images/menu-2.png" alt="menu1.png">
+        <h3>tasty and healthy</h3>
+        <div class="price">Rs.250 <span>350</span></div>
+        <a href="#" class="btn">add to cart</a>
+      </div>
+
+      <div class="small-box">
+        <img src="/Images/menu-3.png" alt="menu1.png">
+        <h3>tasty and healthy</h3>
+        <div class="price">Rs.250 <span>350</span></div>
+        <a href="#" class="btn">add to cart</a>
+      </div>
+
+      <div class="small-box">
+        <img src="/Images/menu-4.png" alt="menu1.png">
+        <h3>tasty and healthy</h3>
+        <div class="price">Rs.250 <span>350</span></div>
+        <a href="#" class="btn">add to cart</a>
+      </div>
+
+      <div class="small-box">
+        <img src="/Images/menu-5.png" alt="menu1.png">
+        <h3>tasty and healthy</h3>
+        <div class="price">Rs.250 <span>350</span></div>
+        <a href="#" class="btn">add to cart</a>
+      </div>
+
+      <div class="small-box">
+        <img src="/Images/menu-6.png" alt="menu1.png">
+        <h3>tasty and healthy</h3>
+        <div class="price">Rs.250 <span>350</span></div>
+        <a href="#" class="btn">add to cart</a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- menu section ends here -->
+
+
+
+  <!-- PRODUCT SECTION STARTS -->
+
+  <section class="product-section">
+    <h1 class="heading">
+      our <span>product</span>
+    </h1>
+
+    <div class="containers">
+
+      <div class="small-box">
+        <div class="icon">
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+        <div class="image">
+          <img src="/Images/product-1.png" alt="">
+        </div>
+        <div class="content">
+          <h3>fresh coffee</h3>
+          <div class="review">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <div class="price">Rs.299 <span>399</span></div>
+        </div>
+      </div>
+
+
+      <div class="small-box">
+        <div class="icon">
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+        <div class="image">
+          <img src="/Images/product-2.png" alt="">
+        </div>
+        <div class="content">
+          <h3>fresh coffee</h3>
+          <div class="review">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <div class="price">Rs.299 <span>399</span></div>
+        </div>
+      </div>
+
+      <div class="small-box">
+        <div class="icon">
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+        <div class="image">
+          <img src="/Images/product-3.png" alt="">
+        </div>
+        <div class="content">
+          <h3>fresh coffee</h3>
+          <div class="review">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <div class="price">Rs.299 <span>399</span></div>
+        </div>
+      </div>
+
+      <div class="small-box">
+        <div class="icon">
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+        <div class="image">
+          <img src="/Images/product-1.png" alt="">
+        </div>
+        <div class="content">
+          <h3>fresh coffee</h3>
+          <div class="review-star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <div class="price">Rs.299 <span>399</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!---- javascript file link-->
+  <script src="js/script.js"></script>
+</body>
+</html>
